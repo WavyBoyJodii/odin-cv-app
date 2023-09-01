@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import '../styles/forms.css'
 
 export default function GeneralInfo({name, email, phone, onName, onEmail, onPhone}) {
     
@@ -19,7 +20,6 @@ export default function GeneralInfo({name, email, phone, onName, onEmail, onPhon
           <input type='tel' id='phone' name='phone' value={phone} onChange={onPhone} required />
         </li>
       </ul>
-      <button>Submit</button>
       </form>
     )
   }

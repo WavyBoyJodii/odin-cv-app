@@ -1,0 +1,29 @@
+form {
+  /* max-width: 70%; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px black solid;
+  padding: 10px 40px 10px;
+  /* text-align: center; */
+  justify-content: center;
+  height: 350px;
+}
+
+form h1 {
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

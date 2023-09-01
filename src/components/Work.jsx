@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+
+import '../styles/forms.css'
 export default function Work({company, job, tasks, workStart, workEnd, onCompany, onJob, onTasks, onWorkStart, onWorkEnd}) {
   
 
@@ -27,7 +29,6 @@ export default function Work({company, job, tasks, workStart, workEnd, onCompany
         <input type='date' id='workEnd' name='workEnd' value={workEnd} onChange={onWorkEnd} required />
       </li>
     </ul>
-    <button>Submit</button>
     </form>
 
   )

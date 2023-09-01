@@ -62,7 +62,8 @@ function App() {
   
 
   return (
-    <>
+    <div className='mainPage'>
+      <div className='left'>
       <GeneralInfo
         name={name}
         email={email}
@@ -70,6 +71,7 @@ function App() {
         onName={onName}
         onEmail={onEmail}
         onPhone={onPhone}
+        className='gen'
       />
       <Education 
         school={school} 
@@ -80,6 +82,7 @@ function App() {
         onMajor={onMajor} 
         onSchoolStart={onSchoolStart} 
         onSchoolEnd={onSchoolEnd} 
+        className='edu'
       />
       <Work 
         company={company}
@@ -92,7 +95,10 @@ function App() {
         onTasks={onTasks}
         onWorkStart={onWorkStart}
         onWorkEnd={onWorkEnd}
+        className='work'
       />
+      </div>
+      <div className='right'>
       <Cv 
         name={name}
         email={email} 
@@ -106,8 +112,10 @@ function App() {
         tasks={tasks} 
         workStart={workStart}
         workEnd={workEnd}
+        className='cv'
       />
-    </>
+      </div>
+    </div>
   )
 }
 
